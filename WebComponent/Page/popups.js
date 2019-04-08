@@ -1,5 +1,6 @@
 var url = "the-internet.herokuapp.com/";
 var popup_loginPage = function() {
+    browser.waitForAngularEnabled(false);
     this.authenticateByPopup = function(username, password) {
         var newUrl =
             "http://" + username + ":" + password + "@" + url + "basic_auth";
@@ -20,4 +21,6 @@ var popup_loginPage = function() {
         });
     }
 };
+
+
 module.exports = new popup_loginPage();
