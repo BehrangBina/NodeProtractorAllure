@@ -1,5 +1,6 @@
 {
     "requires": true,
+    "main": "main.js",
     "lockfileVersion": 1,
     "dependencies": {
         "colors": {
@@ -14,7 +15,7 @@
             "requires": {
                 "colors": "1.1.2"
             },
-            "resolved": "https://registry.npmjs.org/jasmine-spec-reporter/-/jasmine-spec-reporter-4.2.1.tgz",
+            "resolved": "https: //registry.npmjs.org/jasmine-spec-reporter/-/jasmine-spec-reporter-4.2.1.tgz",
             "version": "4.2.1"
         }
     },
