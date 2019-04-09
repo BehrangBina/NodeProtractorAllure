@@ -20,3 +20,9 @@ JavaScript, Protractor, Allure Automation framework with Node JS
 * Using Jasmine `npm install --save-dev jasmine`
 * Creating Page Object Model
     * Creating Page Objects On Page Folder
+
+## Report
+
+### protractor-beautiful-reporter 
+https://www.npmjs.com/package/protractor-beautiful-reporter 
+npm install protractor-beautiful-reporter --save-dev

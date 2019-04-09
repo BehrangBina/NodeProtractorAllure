@@ -20,7 +20,8 @@
         }
     },
     "devDependencies": {
-        "jasmine": "^3.4.0"
+        "jasmine": "^3.4.0",
+        "protractor-beautiful-reporter": "^1.2.7"
     },
     "scripts": {
         "test": "jasmine run"
