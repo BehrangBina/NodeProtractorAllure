@@ -231,73 +231,12 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
 
     var results = [
     {
-        "description": "Should Accept the Confirmation Message|Popup Can be Handled",
+        "description": "should be adding|Angular Calculator",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "sessionId": "346f33fe745e3e00cc65796c1e18fc78",
-        "instanceId": 4976,
-        "browser": {
-            "name": "chrome",
-            "version": "73.0.3683.103"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [
-            {
-                "level": "WARNING",
-                "message": "javascript - The resource https://pagead2.googlesyndication.com/pagead/js/r20190403/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
-                "timestamp": 1554787011488,
-                "type": ""
-            }
-        ],
-        "screenShotFile": "004c0047-003e-0003-0009-00a00026008c.png",
-        "timestamp": 1554787004124,
-        "duration": 7360
-    },
-    {
-        "description": "Should Reject The Confirmation Message|Popup Can be Handled",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "sessionId": "346f33fe745e3e00cc65796c1e18fc78",
-        "instanceId": 4976,
-        "browser": {
-            "name": "chrome",
-            "version": "73.0.3683.103"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00fd00e1-00df-0010-00e2-00b600b40057.png",
-        "timestamp": 1554787012045,
-        "duration": 2070
-    },
-    {
-        "description": "Should Login with valid Credentials|Popup Can be Handled",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "sessionId": "346f33fe745e3e00cc65796c1e18fc78",
-        "instanceId": 4976,
-        "browser": {
-            "name": "chrome",
-            "version": "73.0.3683.103"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00250086-002b-0026-00d0-00e800e200af.png",
-        "timestamp": 1554787014473,
-        "duration": 3034
-    },
-    {
-        "description": "Reading Data From External File|Can Handle Data Driven",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "sessionId": "346f33fe745e3e00cc65796c1e18fc78",
-        "instanceId": 4976,
+        "sessionId": "9bc7d91a88e0afafa864bd7b972301ed",
+        "instanceId": 11624,
         "browser": {
             "name": "chrome",
             "version": "73.0.3683.103"
@@ -307,22 +246,39 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "browserLogs": [
             {
                 "level": "SEVERE",
-                "message": "http://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
-                "timestamp": 1554787017719,
+                "message": "http://juliemr.github.io/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1554970115261,
                 "type": ""
             }
         ],
-        "screenShotFile": "0032009e-001b-00c6-0065-0018009700a6.png",
-        "timestamp": 1554787017838,
-        "duration": 2
+        "screenShotFile": "00e900f7-002a-0016-001e-00470056003e.png",
+        "timestamp": 1554970113733,
+        "duration": 5690
     },
     {
-        "description": "Should Accept the Confirmation Message|Popup Can be Handled",
+        "description": "First Element Should be on the page|Angular Calculator",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "sessionId": "9ec8276ac6bca2faaf13787ed05ce7d1",
-        "instanceId": 25892,
+        "sessionId": "9bc7d91a88e0afafa864bd7b972301ed",
+        "instanceId": 11624,
+        "browser": {
+            "name": "chrome",
+            "version": "73.0.3683.103"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "008b0080-00cf-00ac-0034-006100220001.png",
+        "timestamp": 1554970119920,
+        "duration": 1
+    },
+    {
+        "description": "Add Function Shoud be working|Angular Calculator",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "14664eeac568320b52684a37667587a9",
+        "instanceId": 19204,
         "browser": {
             "name": "chrome",
             "version": "73.0.3683.103"
@@ -331,69 +287,15 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "trace": "",
         "browserLogs": [
             {
-                "level": "WARNING",
-                "message": "javascript - The resource https://pagead2.googlesyndication.com/pagead/js/r20190403/r20190131/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
-                "timestamp": 1554788794436,
+                "level": "SEVERE",
+                "message": "http://juliemr.github.io/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1554970241742,
                 "type": ""
             }
         ],
-        "screenShotFile": "001900c3-0004-001c-00cf-007c00f400d0.png",
-        "timestamp": 1554788785154,
-        "duration": 9277
-    },
-    {
-        "description": "Should Reject The Confirmation Message|Popup Can be Handled",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "sessionId": "9ec8276ac6bca2faaf13787ed05ce7d1",
-        "instanceId": 25892,
-        "browser": {
-            "name": "chrome",
-            "version": "73.0.3683.103"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00040023-00a1-0084-005a-00e8009800f4.png",
-        "timestamp": 1554788794828,
-        "duration": 2091
-    },
-    {
-        "description": "Should Login with valid Credentials|Popup Can be Handled",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "sessionId": "9ec8276ac6bca2faaf13787ed05ce7d1",
-        "instanceId": 25892,
-        "browser": {
-            "name": "chrome",
-            "version": "73.0.3683.103"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00cc00c4-00e3-00e7-000a-006e00ac00b1.png",
-        "timestamp": 1554788797176,
-        "duration": 4245
-    },
-    {
-        "description": "Reading Data From External File|Can Handle Data Driven",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "sessionId": "9ec8276ac6bca2faaf13787ed05ce7d1",
-        "instanceId": 25892,
-        "browser": {
-            "name": "chrome",
-            "version": "73.0.3683.103"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "0044000b-00d2-0038-009a-006c009c00c8.png",
-        "timestamp": 1554788801659,
-        "duration": 2
+        "screenShotFile": "00ac004b-00cb-0042-00f0-007100e90057.png",
+        "timestamp": 1554970240125,
+        "duration": 5802
     }
 ];
 

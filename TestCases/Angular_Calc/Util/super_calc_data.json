@@ -1,0 +1,7 @@
+{
+    "TestCases": [
+        { "firstNumber": 123, "secondNumber": 7, "operation": "+", "expected": "130" },
+        { "firstNumber": 321, "secondNumber": 79, "operation": "+", "expected": "400" },
+        { "firstNumber": 321, "secondNumber": 21, "operation": "-", "expected": "300" }
+    ]
+}

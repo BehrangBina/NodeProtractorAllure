@@ -26,3 +26,11 @@ JavaScript, Protractor, Allure Automation framework with Node JS
 ### protractor-beautiful-reporter 
 https://www.npmjs.com/package/protractor-beautiful-reporter 
 npm install protractor-beautiful-reporter --save-dev
+
+## Additional Libraries
+
+For Mocking
+npm install angular-mocks --save-dev
+
+For Supporting Require in the browser
+npm install --save-dev karma-browserify browserify watchify

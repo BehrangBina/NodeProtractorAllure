@@ -20,8 +20,11 @@
         }
     },
     "devDependencies": {
+        "browserify": "^16.2.3",
         "jasmine": "^3.4.0",
-        "protractor-beautiful-reporter": "^1.2.7"
+        "karma-browserify": "^6.0.0",
+        "protractor-beautiful-reporter": "^1.2.7",
+        "watchify": "^3.11.1"
     },
     "scripts": {
         "test": "jasmine run"
