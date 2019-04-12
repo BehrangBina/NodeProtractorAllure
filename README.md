@@ -2,7 +2,7 @@
 
 JavaScript, Protractor, Allure Automation framework with Node JS
 
-##git Steps 
+## git Steps 
 
 * Install Protractor  `npm install -g protractor`
 * Install Selenium Standalone Server

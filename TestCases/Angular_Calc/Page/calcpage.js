@@ -6,6 +6,7 @@ var calcpage = function() {
     var second = element(by.model('second'))
     var go = element(by.id('gobutton'))
     var result = element(by.binding('latest'))
+    var opratorSelect = element(by.model('operator'))
 
     this.gotoCalcPage = function() {
         browser.ignoreSynchronization = false;
@@ -19,7 +20,6 @@ var calcpage = function() {
             //console.log(testCalc.getSubtractTestData())
         var testData = testCalc.getAddTestData()
         testData.forEach(e => {
-
                 first.sendKeys(e.firstNumber);
                 second.sendKeys(e.secondNumber);
                 console.log("First: " + e.firstNumber + " Second: " + e.secondNumber)
@@ -29,5 +29,20 @@ var calcpage = function() {
             // console.log(testData)
 
     };
+    this.testSubtract = function() {
+        opratorSelect.sendKeys("-")
+        browser.sleep(1000)
+            // element(by.css("#first [value='SUBTRACTION']")).click();
+
+        var testCalc = new calc.CalcTest()
+        var testData = testCalc.getSubtractTestData()
+        testData.forEach(e => {
+            first.sendKeys(e.firstNumber);
+            second.sendKeys(e.secondNumber);
+            console.log("First: " + e.firstNumber + " Second: " + e.secondNumber)
+            go.click();
+            expect(result.getText()).toEqual(e.expected);
+        })
+    }
 };
 module.exports = new calcpage();

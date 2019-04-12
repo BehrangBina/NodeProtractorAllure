@@ -231,12 +231,12 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
 
     var results = [
     {
-        "description": "should be adding|Angular Calculator",
+        "description": "Should Add Two Numbers|Angular Calculator",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "sessionId": "9bc7d91a88e0afafa864bd7b972301ed",
-        "instanceId": 11624,
+        "sessionId": "7c18f3ef7e1783545fe595080a73d2f7",
+        "instanceId": 11724,
         "browser": {
             "name": "chrome",
             "version": "73.0.3683.103"
@@ -247,55 +247,31 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
             {
                 "level": "SEVERE",
                 "message": "http://juliemr.github.io/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
-                "timestamp": 1554970115261,
+                "timestamp": 1554974866784,
                 "type": ""
             }
         ],
-        "screenShotFile": "00e900f7-002a-0016-001e-00470056003e.png",
-        "timestamp": 1554970113733,
-        "duration": 5690
+        "screenShotFile": "002d00eb-006d-005c-00ba-00fb006100df.png",
+        "timestamp": 1554974864978,
+        "duration": 5933
     },
     {
-        "description": "First Element Should be on the page|Angular Calculator",
+        "description": "Should Subtract Two Numbers|Angular Calculator",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "sessionId": "9bc7d91a88e0afafa864bd7b972301ed",
-        "instanceId": 11624,
+        "sessionId": "7c18f3ef7e1783545fe595080a73d2f7",
+        "instanceId": 11724,
         "browser": {
             "name": "chrome",
             "version": "73.0.3683.103"
         },
-        "message": "Passed",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "008b0080-00cf-00ac-0034-006100220001.png",
-        "timestamp": 1554970119920,
-        "duration": 1
-    },
-    {
-        "description": "Add Function Shoud be working|Angular Calculator",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "sessionId": "14664eeac568320b52684a37667587a9",
-        "instanceId": 19204,
-        "browser": {
-            "name": "chrome",
-            "version": "73.0.3683.103"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [
-            {
-                "level": "SEVERE",
-                "message": "http://juliemr.github.io/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
-                "timestamp": 1554970241742,
-                "type": ""
-            }
-        ],
-        "screenShotFile": "00ac004b-00cb-0042-00f0-007100e90057.png",
-        "timestamp": 1554970240125,
-        "duration": 5802
+        "screenShotFile": "00d1000e-004e-00f5-0088-007500cb00c8.png",
+        "timestamp": 1554974871439,
+        "duration": 7123
     }
 ];
 
