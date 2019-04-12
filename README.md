@@ -34,3 +34,44 @@ npm install angular-mocks --save-dev
 
 For Supporting Require in the browser
 npm install --save-dev karma-browserify browserify watchify
+
+
+## POM (Page Object Model)
+
+### Page Object	Paterns	 
+
+* Keep all the WebDriver interactions in one place
+* Adds a layer of abstraction between WebDriver implementation and website/application functionality
+* When underlying source of pages change, updates only need to be made in one place
+* Allows script writers to focus on tests, not on details of WebDriver  interactions 
+
+### Page Object	
+
+* Should contain elements and functions 
+* Should not contain assertions or expects 
+* Represents a single page or a section in a page 
+* Should have a “.page” postfix (e.g. home.page.js) 
+
+### Specs
+
+* Should only contain assertions and expects 
+* Should not contain function or element declaration 
+* Should only access web elements using page-object functions 
+* Should have a “.spec” postfix (e.g. home.spec.js) 
+* Reference to a page-object should have a “Page” postfix (e.g `var HomePage = require(‘../page_objects/home.page.js))`  
+* Should only access web elements using page object functions 
+
+### Helper
+
+* Should contain test data
+* Should contain common scripts
+* Should contain constants
+* Should contain anything that is repeated or consumed multiple times (regex, login/logout, requires, ...) 
+* When something changes you only have to change one thing, which simplifies code maintenance (e.g. test data changes, page added/removed, date format changed, ... ) 
+
+### Configuration
+
+* Should contain framework configuration
+* Should contain device/platform/browser/hosted testing service specific configurations
+* Should contain CI configuration
+* Should contain configuration parameters 
