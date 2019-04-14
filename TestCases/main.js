@@ -41,4 +41,26 @@ describe("Super Calulator Functionality Works As Expected", function() {
             expect(result).toEqual(e.expected);
         });
     })
+    it('Should Handle NAN', () => {
+        var expected = "NaN"
+        superCalculatorPage.UserSelectCalculatorOperator("+");
+        superCalculatorPage.UserClicksGoButton()
+        var result = superCalculatorPage.UserGetsTheResultValue();
+        expect(result).toEqual(expected);
+
+        superCalculatorPage.UserSelectCalculatorOperator("-");
+        result = superCalculatorPage.UserGetsTheResultValue();
+        superCalculatorPage.UserClicksGoButton()
+        expect(result).toEqual(expected);
+
+        superCalculatorPage.UserSelectCalculatorOperator("/");
+        result = superCalculatorPage.UserGetsTheResultValue();
+        superCalculatorPage.UserClicksGoButton()
+        expect(result).toEqual(expected);
+
+        superCalculatorPage.UserSelectCalculatorOperator("*");
+        result = superCalculatorPage.UserGetsTheResultValue();
+        superCalculatorPage.UserClicksGoButton()
+        expect(result).toEqual(expected);
+    })
 });
