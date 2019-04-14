@@ -4,7 +4,7 @@ describe("Super Calulator Functionality Works As Expected", function() {
     var url = "http://juliemr.github.io/protractor-demo/";
     var calcDataCollection;
     beforeAll(function() {
-        calcDataCollection = new superCalcHelper.CalcTest()
+        calcDataCollection = new superCalcHelper.CalcTest();
         browser.ignoreSynchronization = false;
         browser
             .manage()
@@ -14,11 +14,10 @@ describe("Super Calulator Functionality Works As Expected", function() {
             .manage()
             .window()
             .maximize();
-
     });
     beforeEach(() => {
         browser.get(url);
-    })
+    });
     it("The Add Function Should Work", function() {
         var addTestData = calcDataCollection.getAddTestData();
         addTestData.forEach(e => {
@@ -30,7 +29,7 @@ describe("Super Calulator Functionality Works As Expected", function() {
             expect(result).toEqual(e.expected);
         });
     });
-    it('The Subtract Function Should Work Correctly', () => {
+    it("The Subtract Function Should Work Correctly", () => {
         var sutractData = calcDataCollection.getSubtractTestData();
         sutractData.forEach(e => {
             superCalculatorPage.UserInputFirstNumber(e.firstNumber);
@@ -40,27 +39,33 @@ describe("Super Calulator Functionality Works As Expected", function() {
             var result = superCalculatorPage.UserGetsTheResultValue();
             expect(result).toEqual(e.expected);
         });
-    })
-    it('Should Handle NAN', () => {
-        var expected = "NaN"
-        superCalculatorPage.UserSelectCalculatorOperator("+");
-        superCalculatorPage.UserClicksGoButton()
-        var result = superCalculatorPage.UserGetsTheResultValue();
-        expect(result).toEqual(expected);
+    });
+    describe("All Operations Should Handle Nan", () => {
+        var operators = ["+", "-", "/", "*"]
+        let counter = -1
+        var expected = "NaN";
 
-        superCalculatorPage.UserSelectCalculatorOperator("-");
-        result = superCalculatorPage.UserGetsTheResultValue();
-        superCalculatorPage.UserClicksGoButton()
-        expect(result).toEqual(expected);
+        beforeEach(function() {
+            counter++;
+            superCalculatorPage.UserSelectCalculatorOperator(operators[counter])
+            superCalculatorPage.UserClicksGoButton();
+        })
+        it('Should Handle - Operator', () => {
+            var result = superCalculatorPage.UserGetsTheResultValue();
+            expect(result).toEqual(expected);
+        })
 
-        superCalculatorPage.UserSelectCalculatorOperator("/");
-        result = superCalculatorPage.UserGetsTheResultValue();
-        superCalculatorPage.UserClicksGoButton()
-        expect(result).toEqual(expected);
-
-        superCalculatorPage.UserSelectCalculatorOperator("*");
-        result = superCalculatorPage.UserGetsTheResultValue();
-        superCalculatorPage.UserClicksGoButton()
-        expect(result).toEqual(expected);
-    })
+        it('Should Handle + Operator', () => {
+            var result = superCalculatorPage.UserGetsTheResultValue();
+            expect(result).toEqual(expected);
+        })
+        it('Should Handle / Operator', () => {
+            var result = superCalculatorPage.UserGetsTheResultValue();
+            expect(result).toEqual(expected);
+        })
+        it('Should Handle * Operator', () => {
+            var result = superCalculatorPage.UserGetsTheResultValue();
+            expect(result).toEqual(expected);
+        })
+    });
 });

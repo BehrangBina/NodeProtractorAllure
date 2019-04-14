@@ -235,8 +235,8 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "sessionId": "de4616d283881281af89b841802c9182",
-        "instanceId": 18556,
+        "sessionId": "4386e39d7e16dbae90e7bb9227e04024",
+        "instanceId": 21096,
         "browser": {
             "name": "chrome",
             "version": "73.0.3683.103"
@@ -247,21 +247,21 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
             {
                 "level": "SEVERE",
                 "message": "http://juliemr.github.io/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
-                "timestamp": 1555232611835,
+                "timestamp": 1555236002059,
                 "type": ""
             }
         ],
-        "screenShotFile": "00a1001f-00c3-002f-003d-005900eb008b.png",
-        "timestamp": 1555232610598,
-        "duration": 5103
+        "screenShotFile": "005e004e-009d-0099-0061-0069004000f4.png",
+        "timestamp": 1555236000928,
+        "duration": 4904
     },
     {
         "description": "The Subtract Function Should Work Correctly|Super Calulator Functionality Works As Expected",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "sessionId": "de4616d283881281af89b841802c9182",
-        "instanceId": 18556,
+        "sessionId": "4386e39d7e16dbae90e7bb9227e04024",
+        "instanceId": 21096,
         "browser": {
             "name": "chrome",
             "version": "73.0.3683.103"
@@ -269,17 +269,17 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "00ad00c1-0014-0003-001d-00fa0048004e.png",
-        "timestamp": 1555232616139,
-        "duration": 6580
+        "screenShotFile": "003300c0-0020-0053-0077-007600d900f2.png",
+        "timestamp": 1555236006279,
+        "duration": 6532
     },
     {
-        "description": "Should Handle NAN|Super Calulator Functionality Works As Expected",
+        "description": "Should Handle - Operator|All Operations Should Handle Nan|Super Calulator Functionality Works As Expected",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "sessionId": "de4616d283881281af89b841802c9182",
-        "instanceId": 18556,
+        "sessionId": "4386e39d7e16dbae90e7bb9227e04024",
+        "instanceId": 21096,
         "browser": {
             "name": "chrome",
             "version": "73.0.3683.103"
@@ -287,9 +287,63 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "004b0075-0045-0017-00b0-00ad00f60090.png",
-        "timestamp": 1555232623036,
-        "duration": 6470
+        "screenShotFile": "00440071-00dc-00b4-00ea-006500cf00c5.png",
+        "timestamp": 1555236013130,
+        "duration": 2381
+    },
+    {
+        "description": "Should Handle + Operator|All Operations Should Handle Nan|Super Calulator Functionality Works As Expected",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "4386e39d7e16dbae90e7bb9227e04024",
+        "instanceId": 21096,
+        "browser": {
+            "name": "chrome",
+            "version": "73.0.3683.103"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00d4007f-00df-0091-00f0-004700fb0074.png",
+        "timestamp": 1555236015842,
+        "duration": 2308
+    },
+    {
+        "description": "Should Handle / Operator|All Operations Should Handle Nan|Super Calulator Functionality Works As Expected",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "4386e39d7e16dbae90e7bb9227e04024",
+        "instanceId": 21096,
+        "browser": {
+            "name": "chrome",
+            "version": "73.0.3683.103"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00c200ac-0097-007c-0050-00c8006e003c.png",
+        "timestamp": 1555236018462,
+        "duration": 2384
+    },
+    {
+        "description": "Should Handle * Operator|All Operations Should Handle Nan|Super Calulator Functionality Works As Expected",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "4386e39d7e16dbae90e7bb9227e04024",
+        "instanceId": 21096,
+        "browser": {
+            "name": "chrome",
+            "version": "73.0.3683.103"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "003e0004-000c-00fa-00d2-0074009500c2.png",
+        "timestamp": 1555236021208,
+        "duration": 2393
     }
 ];
 

@@ -75,3 +75,10 @@ npm install --save-dev karma-browserify browserify watchify
 * Should contain device/platform/browser/hosted testing service specific configurations
 * Should contain CI configuration
 * Should contain configuration parameters 
+
+### Running Tests with Karma
+
+Alternatively, can run tests by Karma, Go sample
+* karma init 
+* Create conf.js
+* run: Go To sample > use karma test
